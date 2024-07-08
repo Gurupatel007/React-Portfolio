@@ -23,7 +23,7 @@ function SkillsSection({isDarkTheme}) {
     { src: "/images/skills/Saas.svg", alt: "Saas" },
     { src: "/images/skills/git.svg", alt: "Git" },
     { src: "/images/skills/Express.png", alt: "Express" },
-    { src: "/images/skills/Bash.svg", alt: "Bash" },
+    { src: "/images/skills/Tailwind.png", alt: "Tailwind CSS" },
     { src: "/images/skills/Bootstrap.svg", alt: "Bootstrap" },
     { src: "/images/skills/Figma.svg", alt: "Figma" },
     { src: "/images/skills/SQL.svg", alt: "SQL" },
