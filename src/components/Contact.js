@@ -19,7 +19,7 @@ function ContactSection() {
           </div>
         </div>
 
-        <div className="contact-content">
+        <form className="contact-content" netlify>
           <div className="form-group">
             <div className="form-label">
               <p>Name</p>
@@ -46,12 +46,12 @@ function ContactSection() {
           </div>
           <div className="form-group">
             <div className="btn">
-              <a href="mailto:gurupatel279@gmail.com">
+              <button type="submit">
                 SEND
-              </a>
+              </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
