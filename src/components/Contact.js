@@ -1,22 +1,24 @@
 import React from "react";
+
 function ContactSection() {
   return (
     <div className="contactSection-wrapper">
       <div className="contact-section">
-        <div className="contactText-container">
-          <div className="contactText">
-            <div className="contact">CONTACT</div>
+        <div className="contactSection-textContainer">
+          <div className="contactText-container">
+            <div className="contactText">CONTACT</div>
+            <div className="contact-line"></div>
           </div>
-          <div className="line"></div>
+          <div className="contact-title">
+            <div className="title">
+              Questions, Thoughts, Any Suggestions
+            </div>
+            <div className="title-desc">
+              Feel free to contact me by filling out the form below.
+            </div>
+          </div>
         </div>
-        <div className="contact-title">
-          <div className="title">
-            <p>Questions, Thoughts, Any Suggestions</p>
-          </div>
-          <div className="title-desc">
-            <p>Feel free to contact me by filling out the form below.</p>
-          </div>
-        </div>
+
         <div className="contact-content">
           <div className="form-group">
             <div className="form-label">
@@ -39,15 +41,15 @@ function ContactSection() {
               <p>Message</p>
             </div>
             <div className="form-input">
-              <textarea placeholder="Write message..." rows="5"/>
+              <textarea placeholder="Write message..." rows="5" />
             </div>
           </div>
           <div className="form-group">
-              <div className="btn">
-                <a href="mailto:gurupatel279@gmail.com">
-                  SEND
-                </a>
-              </div>
+            <div className="btn">
+              <a href="mailto:gurupatel279@gmail.com">
+                SEND
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function ProjectsSection() {
   const projects = [
     {
@@ -32,37 +31,35 @@ function ProjectsSection() {
   return (
     <div className="projectSection-wrapper">
       <div className="project-section">
-        <div className="projectText-container">
-          <div className="projectText">
-            <div className="project">MY PROJECTS</div>
+        <div className="projectSection-textContainer">
+          <div className="projectText-container">
+            <div className="projectText">MY PROJECTS</div>
+            <div className="project-line"></div>
           </div>
-          <div className="line"></div>
+          <div className="projectContent-container">
+            <div className="project-title">
+              <div className="title">My Projects</div>
+              <div className="title-desc">
+                Here are some of the projects I've worked on. Hover over the project to see details.
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="projectContent-container">
-          <div className="project-title">
-            <div className="title">
-              <p>My Projects</p>
-            </div>
-            <div className="title-desc">
-              <p>Here are some of the projects I've worked on. Hover over the project to see details.</p>
-            </div>
-          </div>
-          <div className="project-content">
-            {projects.map((project, index) => (
-              <div className="project-card" key={index}>
-                <img src={project.image} alt={project.name} className="project-image" />
-                <div className="project-overlay">
-                  <div className="project-overlay-content">
-                    <div className="project-name">{project.name}</div>
-                    <div className="project-buttons">
-                      <a href={project.live} target="_blank" rel="noreferrer" className="project-link">Live Link</a>
-                      <a href={project.github} target="_blank" rel="noreferrer" className="project-link">View Code</a>
-                    </div>
+        <div className="project-content">
+          {projects.map((project, index) => (
+            <div className="project-card" key={index}>
+              <img src={project.image} alt={project.name} className="project-image" />
+              <div className="project-overlay">
+                <div className="project-overlay-content">
+                  <div className="project-name">{project.name}</div>
+                  <div className="project-buttons">
+                    <a href={project.live} target="_blank" rel="noreferrer" className="project-link">Live Link</a>
+                    <a href={project.github} target="_blank" rel="noreferrer" className="project-link">View Code</a>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

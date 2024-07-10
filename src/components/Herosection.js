@@ -1,6 +1,5 @@
 import React from "react";
 // import "./Herosection.css";
-import '../App.css';
 
 function HeroSection({isDarkTheme}) {
   return (
@@ -55,7 +54,7 @@ function HeroSection({isDarkTheme}) {
             
           </a>
           </div>
-          <div className="line"></div>
+          <div className="hero-line"></div>
         </div>
 
         <div className="hero-content">
@@ -73,7 +72,7 @@ function HeroSection({isDarkTheme}) {
           <div className="scrollText">
             <p>SCROLL</p>
           </div>
-          <div className="line"></div>
+          <div className="hero-line"></div>
         </div>
       </div>  
     </div>

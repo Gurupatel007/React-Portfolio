@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function LanguagesSection() {
   const languages = [
     { name: "JavaScript", image: "/images/js.svg" },
@@ -14,11 +13,19 @@ function LanguagesSection() {
   return (
     <div className="languagesSection-wrapper">
       <div className="languages-section">
-        <div className="languagesText-container">
-          <div className="languagesText">
-            <div className="languages">LANGUAGES</div>
+        <div className="languageSection-textContainer">
+          <div className="languagesText-container">
+            <div className="languagesText">LANGUAGES</div>
+            <div className="language-line"></div>
           </div>
-          <div className="line"></div>
+          <div className="languages-title">
+            <div className="title">
+              <p>Programming Languages</p>
+            </div>
+            <div className="title-desc">
+              <p>These are the languages I am currently familiar with.</p>
+            </div>
+          </div>
         </div>
         <div className="languages-content">
           {languages.map((language, index) => (

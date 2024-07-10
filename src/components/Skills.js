@@ -1,20 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import '../App.css';
 
-function SkillsSection({isDarkTheme}) {
+function SkillsSection({ isDarkTheme }) {
+  const [hoveredSkill, setHoveredSkill] = useState(null);
 
-  if(!isDarkTheme){
-    var source = "/images/skills/github-light.svg";
-  }
-  else{
-    source = "/images/skills/Github.svg";
-  }
+  const source = isDarkTheme ? "/images/skills/Github.svg" : "/images/skills/github-light.svg";
+
   const imagesLinkData = [
     { src: "/images/skills/HTML.png", alt: "HTML" },
     { src: "/images/skills/css-3.png", alt: "CSS" },
     { src: "/images/skills/js.svg", alt: "JavaScript" },
-    {src: source, alt: "Github"},
-    // { src:"/images/skills/Github.svg", alt: "Github" },
+    { src: source, alt: "Github" },
     { src: "/images/skills/Bash.svg", alt: "Bash" },
     { src: "/images/skills/vite.svg", alt: "Vite" },
     { src: "/images/skills/React.png", alt: "React" },
@@ -29,16 +25,20 @@ function SkillsSection({isDarkTheme}) {
     { src: "/images/skills/SQL.svg", alt: "SQL" },
   ];
 
+  const themeClass = isDarkTheme ? '' : 'light-theme';
+
   return (
-    <div className="skillSection-wrapper">
+    
+
+    <div className={`skillSection-wrapper ${themeClass}`}>
       <div className="skills-section">
-        <div className="skillText-container">
-          <div className="skillText">
-            <div>MY SKILLS</div>
+        <div className="skillSection-textContainer">
+          <div className="skillText-container">
+            <div className="skillText">
+              <div>MY SKILLS</div>
+            </div>
+            <div className="skills-line"></div>
           </div>
-          <div className="line"></div>
-        </div>
-        <div className="skillContent-container">
           <div className="skills-title">
             <div className="title">
               <p>My Programming Skills</p>
@@ -47,16 +47,22 @@ function SkillsSection({isDarkTheme}) {
               <p>These are the technologies I am currently familiar with.</p>
             </div>
           </div>
-          <div className="skills-content">
-            {imagesLinkData.map((image, index) => (
-              <div className="skill-card" key={index}>
-                <img src={image.src} alt={image.alt} className="skill-image" />
-                <div className="skill-name">{image.alt}</div>
-              </div>
-            ))}
-          </div>
         </div>
-
+        <div className="skills-content">
+          {imagesLinkData.map((image, index) => (
+            <div 
+              className="skill-card" 
+              key={index}
+              onMouseEnter={() => setHoveredSkill(image.alt)}
+              onMouseLeave={() => setHoveredSkill(null)}
+            >
+              <img src={image.src} alt={image.alt} className="skill-image" />
+              {hoveredSkill === image.alt && (
+                <div className="skill-popup">{image.alt}</div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
