@@ -224,7 +224,7 @@ body {
   }
 }
 
-@media (max-width:365px){
+@media (max-width:400px){
   .header-container {
     gap: 5px;
   }
@@ -526,11 +526,13 @@ body {
   .hero-image {
     width: 60%;
     height: auto;
+    max-width: 300px;
   }
 
   .hero-image img {
     width: 100%;
     height: auto;
+    max-width: 300px;
   }
 
   .scrollText {
