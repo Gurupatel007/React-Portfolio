@@ -1,6 +1,4 @@
 import React from "react";
-// import "./Header.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-scroll';
 
 function Header({ onToggleTheme, isDarkTheme}) {
