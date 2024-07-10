@@ -2340,6 +2340,7 @@ gap: 22px;
 .form-input textarea {
   height: 160px;
   resize: vertical;
+  color: var(--contact-text-color);
 }
 
 .form-input input::placeholder,
