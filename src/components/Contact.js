@@ -25,7 +25,7 @@ function ContactSection() {
               <p>Name</p>
             </div>
             <div className="form-input">
-              <input type="text" placeholder="e.g. Guru Patel" />
+              <input type="text" name="name" placeholder="e.g. Guru Patel" />
             </div>
           </div>
           <div className="form-group">
@@ -33,7 +33,7 @@ function ContactSection() {
               <p>Email</p>
             </div>
             <div className="form-input">
-              <input type="email" placeholder="e.g. gurupatel279@gmail.com" />
+              <input type="email" name="email" placeholder="e.g. gurupatel279@gmail.com" />
             </div>
           </div>
           <div className="form-group">
@@ -41,7 +41,7 @@ function ContactSection() {
               <p>Message</p>
             </div>
             <div className="form-input">
-              <textarea placeholder="Write message..." rows="5" />
+              <textarea name="message" placeholder="Write message..." rows="5" />
             </div>
           </div>
           <div className="form-group">
