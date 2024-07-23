@@ -54,7 +54,7 @@ function ContactSection() {
           </div>
         </div>
 
-        <form className="contact-content" name="contact-form" method="post" data-netlify="true" onSubmit={handleSubmit}>
+        <form className="contact-content" name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <div className="form-label">
