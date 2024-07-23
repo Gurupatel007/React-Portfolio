@@ -2394,26 +2394,19 @@ gap: 22px;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-}
-
-.btn button {
   color: var(--btn-txt);
-  text-decoration: none;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2.88px;
   border: none;
-  background: none
 }
 
 .btn:hover {
   border: var(--btn-hover-border) 2px solid;
   background-color: var(--btn-hover-bg);
-}
-
-.btn:hover button {
   color: var(--contact-text-color);
 }
+
 
 @media (max-width: 1300px) {
   .contactSection-wrapper {
