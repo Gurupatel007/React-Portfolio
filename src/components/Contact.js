@@ -19,7 +19,7 @@ function ContactSection() {
           </div>
         </div>
 
-        <form className="contact-content" netlify>
+        <form className="contact-content" name="contact-form" method="post" data-netlify="true">
           <div className="form-group">
             <div className="form-label">
               <p>Name</p>
