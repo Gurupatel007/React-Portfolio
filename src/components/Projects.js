@@ -24,7 +24,7 @@ function ProjectsSection() {
       name: "Student Corner",
       image: "/images/projects/landing.png",
       live: "#",
-      github: "https://github.com/Gurupatel007/Materials/tree/main/SEM-6/CapstoneProject-2"
+      github: "https://github.com/Gurupatel007/Student-Corner"
     },
   ];
 
